@@ -3,6 +3,8 @@
 
 using namespace std; 
 
+user customer;
+
 bool login(user users)
 {
 	string user_name;
@@ -25,6 +27,8 @@ bool login(user users)
 	else
 	{
 		cout << "error !\n try again \n";
+
+		return false;
 	}
 
 
@@ -32,19 +36,12 @@ bool login(user users)
 
 void sign_up()
 {
-	int userCount = 1;
-
-
 
 	user us;
 
-	userCount++;
-
 	us.id = 1;
 
-	us.id++;
 	
-
 	cout << "input your name : \n";
 
 	cin >> us.name;
@@ -68,7 +65,7 @@ void sign_up()
 
 void user_interface()
 {
-	cout << "***---------- welcome to out system :) ----------***  \n";
+	cout << "***---------- welcome to our system :) ----------***  \n";
 
 	int choose;
 
@@ -88,4 +85,8 @@ void user_interface()
 	{
 		cout << "invalid input :(";
 	}
+}
+
+void edit_info()
+{
 }

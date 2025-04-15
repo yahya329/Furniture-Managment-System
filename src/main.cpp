@@ -1,12 +1,13 @@
 #include<iostream>
+#include"USER.cpp"
 
 
 using namespace std;
 
-const int arrSize = 5;
+
 
 int main()
 {
-
+	user_interface();
 
 }
